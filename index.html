@@ -1,11 +1,95 @@
-<!DOCTYPE html>
-<html>
+  
+<html> 
 <head>
-	<title>
-		Bilite!
-	</title>
-</head>
-<body>
-<a href="register.html">Seller</a>
-</body>
-</html>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <style type="text/css">
+        #fm{
+            margin: 0px 220px;
+        }
+      </style>
+ </head> 
+ <body>
+
+  <nav>
+    <div class="nav-wrapper" style="background-color: #45B39D">
+      <a href="#" class="brand-logo" style="margin: 0px 15px;">bilite</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="seller.html">Seller</a></li>
+      </ul>
+    </div>
+  </nav>
+<div></div>
+
+
+  <div class="row">
+    <form id="fm" class="col s8" action="pdf.php" method="Post">
+      <div class="row">
+        <div class="input-field col s6">
+          <i class="material-icons prefix">image</i>
+          <input type="text" placeholder="Store Name" name="storename" type="text" class="validate">
+         
+        </div>
+
+        <div class="input-field col s6">
+          <i class="material-icons prefix">account_circle</i>
+          <input type="text" placeholder="Owner Name" name="oname" type="text" class="validate">
+         
+        </div>
+        <div class="input-field col s6">
+          <i class="material-icons prefix">add_location</i>
+          <input type="text" placeholder="Address" name="address" type="tel" class="validate">
+          
+        </div>
+        <div class="input-field col s6">
+          <i class="material-icons prefix">navigation</i>
+          <input type="text" placeholder="City" name="city" type="tel" class="validate">
+          
+        </div>
+        <div class="input-field col s6">
+          <i class="material-icons prefix">filter_1</i>
+          <input type="text" placeholder="Pin" name="pin" type="tel" class="validate">
+        </div>
+        <div class="input-field col s6">
+          <i class="material-icons prefix">location_on</i>
+          <input type="text" placeholder="State" name="state" type="tel" class="validate">
+          
+        </div>
+        <div class="input-field col s6">
+          <i class="material-icons prefix">mode_edit</i>
+          <input type="text" placeholder="Quantity" name="quantity" type="tel" class="validate">
+          
+        </div>
+        <div class="input-field col s6">
+          <i class="material-icons prefix">timeline</i>
+          <input type="text" placeholder="Price" name="price" type="tel" class="validate">
+          
+        </div>
+        <div class="input-field col s6">
+          <i class="material-icons prefix">swap_horiz</i>
+          <input type="text" placeholder="Tax" name="tax" type="tel" class="validate">
+          
+        </div>
+        <div class="input-field col s6">
+          <i class="material-icons prefix">swap_horiz</i>
+          <input type="text" placeholder="Discount" name="discount" type="tel" class="validate">
+          
+        </div>
+        <div class="input-field col s12">
+          <i class="material-icons prefix">check</i>
+          <input type="text" placeholder="Total Cost" name="total" type="tel" class="validate">
+          
+        </div>
+          <button class="btn waves-effect waves-light" type="submit" style="margin: 20px 450px;">Submit</button>
+      </div>
+    </form>
+  </div>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+  </body>
+  </html>
