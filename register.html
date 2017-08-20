@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>
+  	Seller Info
+  </title>
+  <!-- CORE CSS-->
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css">
+
+<style type="text/css">
+html,
+body {
+    height: 100%;
+}
+html {
+    display: table;
+    margin: auto;
+}
+body {
+    display: table-cell;
+    vertical-align: middle;
+}
+.margin {
+  margin: 0 !important;
+}
+
+.card-panel { width:600px;}
+
+
+
+@media only screen
+and (max-width : 480px) {
+.card-panel { width:75px;}
+}
+
+
+@media only screen
+and (max-width : 767px) {
+.card-panel { width:300px;}
+}
+
+
+
+/* label color */
+   .input-field label {
+     color: grey;
+   }
+   /* label focus color */
+   .input-field input[type=text]:focus + label {
+     color: grey;
+   }
+   /* label underline focus color */
+   .input-field input[type=text]:focus {
+     border-bottom: 1px solid #1E90FF;
+     box-shadow: 0 1px 0 0 #000;
+   }
+   /* valid color */
+   .input-field input[type=text].valid {
+     border-bottom: 1px solid #1E90FF;
+     box-shadow: 0 1px 0 0 #000;
+   }
+   /* invalid color */
+   .input-field input[type=text].invalid {
+     border-bottom: 1px solid #000;
+     box-shadow: 0 1px 0 0 #000;
+   }
+   /* icon prefix focus color */
+   .input-field .prefix.active {
+     color: #000;
+   }
+
+
+</style>
+  
+</head>
+
+<body class="blue">
+
+
+  <div id="login-page" class="row">
+    <div class="card-panel">
+      <form class="login-form">
+        <div class="row">
+          <div class="input-field col s12 center">
+            <img src="images.jpg" alt="" class="responsive-img valign profile-image-login" width="20%" height="20%">
+            <p class="center login-form-text" style="font-family: Comic Sans MS, cursive, sans-serif; font-size: 1.7em">Owner - Permanent Credentials for Bills</p>
+          </div>
+        </div>
+        <div class="row margin">
+          <div class="input-field col s12">
+            <i class="mdi-maps-layers prefix"></i>
+            <input id="shop_name" type="text" class="validate">
+            <label for="shop_name" data-error="wrong" class="center-align">Shop Name</label>
+          </div>
+        </div>
+        <div class="row margin">
+          <div class="input-field col s12">
+            <i class="mdi-social-person-outline prefix"></i>
+            <input id="owner_name" type="text" class="validate">
+            <label for="owner_name" data-error="wrong" class="center-align">Owner Name</label>
+          </div>
+        </div><div class="row margin">
+          <div class="input-field col s12">
+            <i class="mdi-maps-directions prefix"></i>
+            <input id="address" type="text" class="validate">
+            <label for="address" data-error="wrong" class="center-align">Address</label>
+          </div>
+        </div><div class="row margin">
+          <div class="input-field col s12 m1">
+          	<i class="mdi-maps-pin-drop prefix"></i>
+          </div>
+          <div class="input-field col s12 m5">
+			<select class="select-wrapper">
+			<option value="" disabled selected class="select_default">Choose City</option>
+			<option value="">example 1</option>
+			<option value="">example 2</option>
+			<option value="">example 3</option>
+			</select>
+			<label>City</label>
+		  </div>
+		  <div class="input-field col s12 m6">
+			<select class="select-wrapper">
+			<option value="" disabled selected class="select_default">Choose State</option>
+			<option value="">example 1</option>
+			<option value="">example 2</option>
+			<option value="">example 3</option>
+			</select>
+			<label>State</label>
+		  </div>
+  		</div><div class="row margin">
+          <div class="input-field col s12">
+            <i class="mdi-hardware-keyboard-hide prefix"></i>
+            <input id="pincode" type="text" class="validate">
+            <label for="pincode" data-error="wrong" class="center-align">Pincode</label>
+          </div>
+        </div><div class="row margin">
+          <div class="input-field col s12">
+            <i class="mdi-image-style prefix"></i>
+            <input id="tagline" type="text" class="validate">
+            <label for="tagline" data-error="wrong" class="center-align">Tagline</label>
+          </div>
+        </div>
+        <div class="row margin">
+          <div class="input-field col s12">
+            <i class="mdi-communication-email prefix"></i>
+            <input id="email" type="email" class="validate">
+            <label for="email" data-error="wrong" class="center-align">Email</label>
+          </div>
+        </div>
+        <div class="row margin">
+          <div class="input-field col s12">
+            <i class="mdi-communication-call prefix"></i>
+            <input id="mobile" type="text" class="validate">
+            <label for="mobile" data-error="wrong" class="center-align">Mobile</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <a href="register.html" class="btn waves-effect waves-light col s12">Submit</a>
+          </div>
+          <div class="input-field col s12">
+            <p class="margin center medium-small sign-up">Already have filled the form? <a href="index.html">Home</a></p>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- jQuery Library -->
+ <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <!--materialize js-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/js/materialize.min.js"></script>
+
+</body>
+<script type="text/javascript">
+	$(document).ready(function() {
+    $('select').material_select();
+});
+
+</script>
+</html>
